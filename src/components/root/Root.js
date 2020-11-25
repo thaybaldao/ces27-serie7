@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { StyleSheet, TextInput, View, TouchableOpacity, Text } from "react-native";
-import {set, evaluate, deleteLastEntry, clear} from "./redux/actions.js";
+import {set, evaluate, deleteLastEntry, clear} from "../../redux/actions";
 
-class App extends Component {
+class Root extends Component {
   render() {
     const btns = [ "7", "8", "9", "C",
                    "4", "5", "6", "/",
@@ -14,9 +14,9 @@ class App extends Component {
     const { set, evaluate, deleteLastEntry, clear} = this.props;
 
     return (
-      <View style={styles.app}>
-        <View style={styles.result}>
-          <TextInput style={styles.resultInput} value={this.props.expression} />
+      <View style={styles.container}>
+        <View style={styles.resultContainer}>
+          <TextInput style={styles.result} value={this.props.expression} />
         </View>
         <View style={styles.buttonsContainer}>
           {
@@ -62,24 +62,24 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 const styles = StyleSheet.create({
-  app: {
+  container: {
     width: '80%',
     margin: 'auto',
     marginTop: '50px',
-    backgroundColor: 'black',
+  },
+  resultContainer: {
+    padding: '6%',
   },
   result: {
     padding: '3%',
-  },
-  resultInput: {
     display: 'block',
     width: '100%',
     border: 'none',
     height: 50,
     fontWeight: 700,
-    fontSize: '25px',
+    fontSize: '30px',
     textAlign: 'right',
-    borderRadius: '4px',
+    borderRadius: '6px',
     backgroundColor: 'white',
     color: 'black'
   },
@@ -87,24 +87,24 @@ const styles = StyleSheet.create({
     padding: '3%',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    height: '100%',
   },
   button:{
     width: '19%',
-    lineHeight: 30,
-    margin: '3%',
+    height: 55,
+    marginLeft: '3%',
+    marginRight: '3%',
+    marginTop: '3%',
     border: 'none',
-    borderRadius: '8px',
+    borderRadius: '55px',
     backgroundColor: '#666666',
   },
   key:{
     color: 'white',
-    fontWeight: 700,
-    fontSize: '20px',
-    textAlign: 'center',
-    justifyContent: "center",
-    marginTop: '5px',
-    marginBottom: '5px',
+    fontWeight: 600,
+    fontSize: '24px',
+    margin: 'auto'
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Root);
