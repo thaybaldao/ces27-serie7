@@ -2,21 +2,18 @@ import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
   calculatorContainer: {
-    width: '90%',
-    margin: 'auto',
-    marginTop: '50px',
+    width: '100%',
   },
   resultContainer: {
-    padding: '6%',
+    marginTop: 50,
+    padding: '3%',
   },
   result: {
     padding: '3%',
-    display: 'block',
     width: '100%',
-    border: 'none',
     height: 70,
-    fontWeight: 500,
-    fontSize: '60px',
+    fontWeight: "500",
+    fontSize: 60,
     textAlign: 'right',
     color: 'white'
   },
@@ -28,19 +25,17 @@ const styles = StyleSheet.create({
   },
   button:{
     width: '19%',
-    height: 60,
-    marginLeft: '3%',
-    marginRight: '3%',
-    marginTop: '3%',
-    border: 'none',
-    borderRadius: '60px',
+    height: 65,
+    margin: '3%',
+    borderRadius: 65,
     backgroundColor: '#454545',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   key:{
     color: 'white',
-    fontWeight: 500,
-    fontSize: '24px',
-    margin: 'auto'
+    fontWeight: "500",
+    fontSize: 30,
   },
 });
 
