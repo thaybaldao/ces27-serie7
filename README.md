@@ -2,7 +2,7 @@
 
 This project was developed as an assignment for CES-26 course of Instituto Tecnológico de Aeronáutica.
 It is a React Native App for a calculator that uses Redux to deal with its states.
-Besides the four basic arithmetic operations, this calculator also supports floating point operations and contains clear and backspace buttons.
+Besides the **four basic arithmetic operations**, this calculator also supports **floating point operations** and contains **clear** and **backspace buttons**.
 
 ![Calculator](calculator.png)
 
@@ -30,11 +30,11 @@ The implementation of these actions deals with some possible errors of usage by 
 
 ## Running the project
 
-To facilitate testing, this app was developed using the Expo framework. Thus, to run it, just use the following command line:
+To facilitate testing, this app was developed using the *Expo framework*. Thus, to run it, just use the following command line:
 
 ### `expo start`
 
-After that, you can download **Expo client app** in your phone and scan the QR code that appears in the terminal in order to run the app directly in your device.
+After that, you can download *Expo client app* in your phone and scan the QR code that appears in the terminal in order to run the app directly in your device.
 
 Otherwise, you can use the following command line:
 ### `w`
