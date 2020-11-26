@@ -39,8 +39,6 @@ After that, you can download *Expo client app* in your phone and scan the QR cod
 Otherwise, you can use the following command line:
 ### `w`
 
-Then, open [http://localhost:19006/](http://localhost:19006/) to view the app in the browser*.
-
-After that, the page will reload if you make edits. You will also see any lint errors in the console.
+Then, open [http://localhost:19006/](http://localhost:19006/) to view the app in the browser*. After that, the page will reload if you make edits. You will also see any lint errors in the console.
 
 *I recommend using a smartphone view in the browser.
