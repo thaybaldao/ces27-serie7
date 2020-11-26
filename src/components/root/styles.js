@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 70,
     fontWeight: "500",
-    fontSize: 60,
+    fontSize: 45,
     textAlign: 'right',
     color: 'white'
   },

@@ -6,6 +6,9 @@ import Root from "./src/components/root/Root";
 
 const ReduxApp = () => (
   <View style={styles.app}>
+    // <Provider/> makes the Redux store available
+    // to any nested components that have been
+    // wrapped in the connect() function
     <Provider store={configureStore()}>
       <Root />
     </Provider>
