@@ -41,7 +41,6 @@ Otherwise, you can use the following command line:
 
 Then, open [http://localhost:19006/](http://localhost:19006/) to view the app in the browser*.
 
-After that, the page will reload if you make edits.\
-You will also see any lint errors in the console.
+After that, the page will reload if you make edits. You will also see any lint errors in the console.
 
 *I recommend using a smartphone view in the browser.
