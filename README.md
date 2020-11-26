@@ -1,13 +1,40 @@
-# Sample Snack app
+# Calculator React App
 
-Welcome to Expo!
+This project was developed as an assignment for CES-26 course of Instituto Tecnológico de Aeronáutica.
+It is a React App for a calculator that uses Redux to deal with its states.
+Besides the four basic arithmetic operations, this calculator also supports floating point operations and contains clear and backspace buttons.
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
+![Calculator](calculator.png)
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
+## Project Structure
+    ├── src                       # dynamic files
+      ├── components              # redux files to deal with calculator states
+        ├── root
+          ├── Root.js             # implements calculator interface
+          ├── styles.js           # styles for calculator interface
+      ├── redux                   # redux files to deal with calculator states
+        ├── actions.js
+        ├── reducers.js
+        ├── store.js
+        ├── types.js
+     ├── App.js                 # integrates react and redux
 
-Projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the **Embed** button.
+## Redux actions implemented
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
+- `SET_EXPRESSION`: adds entries to the arithmetic expression.
+- `EVALUATE_EXPRESSION`: calculates the result of the arithmetic expression.
+- `DELETE_LAST_ENTRY`: deletes the last entry of the arithmetic expression.
+- `CLEAR_EXPRESSION`: clears the arithmetic expression.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
+The implementation of these actions deals with some possible errors of usage by the user.
+
+## Running the project
+
+### `expo start`
+### `w`
+
+Runs the app in the development mode.\
+Open [http://localhost:19006](http://localhost:19006) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
