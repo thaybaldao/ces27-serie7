@@ -5,13 +5,13 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   resultContainer: {
-    marginTop: 50,
-    padding: '3%',
+    marginTop: 30,
+    padding: '2%',
   },
   result: {
     padding: '3%',
     width: '100%',
-    height: 70,
+    height: 60,
     fontWeight: "500",
     fontSize: 45,
     textAlign: 'right',

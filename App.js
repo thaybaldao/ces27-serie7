@@ -5,10 +5,10 @@ import configureStore from "./src/redux/store";
 import Root from "./src/components/root/Root";
 
 const ReduxApp = () => (
+  // <Provider/> makes the Redux store available
+  // to any nested components that have been
+  // wrapped in the connect() function
   <View style={styles.app}>
-    // <Provider/> makes the Redux store available
-    // to any nested components that have been
-    // wrapped in the connect() function
     <Provider store={configureStore()}>
       <Root />
     </Provider>
